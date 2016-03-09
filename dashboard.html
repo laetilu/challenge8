@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Challenge8</title>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="/bower_components/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+  </head>
+<body>
+  <div class="container-fluid">
+
+      <div class="row rownav">
+
+        <!-- <div class="col-md-12"> -->
+          <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">SB Admin</a>
+                </div>
+
+
+
+                <div class="collapse navbar-collapse navbar-ex2-collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i><b class="caret"></b></a>
+                      <ul class="dropdown-menu overflow">
+                              <li><a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#"><img class="media-object" alt="64x64" style="width: 64px; height: 64px;" src="image/64x64.jpg"></a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Image en haut à gauche</h4>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                                    </div>
+                                </div>
+                              </a>
+                            </li>
+
+                            <li><a href="#">
+                              <div class="media">
+                                  <div class="media-left">
+                                      <a href="#"><img class="media-object" alt="64x64" style="width: 64px; height: 64px;" src="image/64x64.jpg"></a>
+                                  </div>
+                                  <div class="media-body">
+                                      <h4 class="media-heading">Image en haut à gauche</h4>
+                                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                                  </div>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i></i><b class="caret"></b></a>
+                      <ul class="dropdown-menu bell">
+                        <li><a href="#">Alert Name<button type="button" class="btn btn-sm btn-primary">Alert Badge </button></a></li>
+                        <li><a href="#">Alert Name<button type="button" class="btn btn-sm btn-success">Alert Badge </button></a></li>
+                        <li><a href="#">Alert Name<button type="button" class="btn btn-sm btn-info">Alert Badge </button></a></li>
+                        <li><a href="#">Alert Name<button type="button" class="btn btn-sm btn-warning">Alert Badge </button></a></li>
+                        <li><a href="#">Alert Name<button type="button" class="btn btn-sm btn-danger">Alert Badge </button></a></li>
+                        <li><a href="#">Alert Name<button type="button" class="btn btn-sm btn-inverse">Alert Badge </button></a></li>
+                        <li><a href="#">Alert Name<button type="button" class="btn btn-sm  btn-purple">Alert Badge </button></a></li>
+                        <li><a href="#">View All</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>John Smith<b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#"><i class="fa fa-fw fa-user"></i>Profile</a></li>
+                        <li class="active"><a href="#"><i class="fa fa-fw fa-envelope"></i>Inbox</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-gear"></i>Settings</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-power-off"></i>Log Out</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </nav>
+
+        <!-- </div> -->
+      </div>
+
+    <!-- nav horizontale fin -->
+
+
+    <div class="row menuetcentral">
+      <!-- <div class="col-md-12"> -->
+        <div class="col-md-2 menuvertical">
+
+        <ul class="nav nav-pills nav-stacked nav-stacked-left pull-left" id="myTab">
+            <li class="active"><a data-toggle="tab" href="#stack1"><i class="fa fa-fw fa-dashboard"></i>Dashboard</a></li>
+            <li><a data-toggle="tab" href="#stack2"><i class="fa fa-fw fa-bar-chart-o"></i>Charts</a></li>
+            <li><a data-toggle="tab" href="#stack2"><i class="fa fa-fw fa-table"></i>Tables</a></li>
+            <li><a data-toggle="tab" href="#stack2"><i class="fa fa-fw fa-edit"></i>Forms</a></li>
+            <li><a data-toggle="tab" href="#stack2"><i class="fa fa-fw fa-desktop"></i>Bootstrap ELements</a></li>
+            <li><a data-toggle="tab" href="#stack2"><i class="fa fa-fw fa-wrench"></i>Bootstrap Grid</a></li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" id="myTabDrop1" href="#">
+                    <i class="fa fa-fw fa-arrows-v"></i>Dropdown<b class="caret"></b>
+                </a>
+                <ul aria-labelledby="myTabDrop1" role="menu" class="dropdown-menu">
+                    <li><a data-toggle="tab" href="#stackdropdown1">Texte 1</a></li>
+                    <li><a data-toggle="tab" href="#stackdropdown2">Texte 2</a></li>
+                </ul>
+            </li>
+            <li><a data-toggle="tab" href="#stack2"><i class="fa fa-fw fa-file"></i>Blank Page</a></li>
+            <li><a data-toggle="tab" href="#stack2"><i class="fa fa-fw fa-dashboard"></i>RTL Dashboard</a></li>
+
+        </ul>
+
+        <!-- <div class="tab-content pull-left" id="myTabContent">
+            <div id="stackdropdown1" class="tab-pane fade">
+                <p>Texte 1</p>
+            </div>
+            <div id="stackdropdown2" class="tab-pane fade">
+                <p>Texte 2</p>
+            </div>
+        </div> -->
+      </div> <!-- col 2 -->
+
+
+      <div class="col-md-10"></div>
+
+
+
+
+
+      <!-- </div> -->
+    </div>  <!-- row menu vertical -->
+
+
+
+
+  </div>
+</body>
